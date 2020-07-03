@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lead-up</title>
+        <!--  style.css connection  -->
+        <link th:href="@{/css/style.css}" rel="stylesheet">
+        <!--  AOS connection  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--  Jquery connection  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--  Slick library connection  -->
+        <link rel="stylesheet" type="text/css" href="../static/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="../static/slick/slick-theme.css"/>
+    </head>
+<body>
+<header th:insert="blocks/header.html :: header"></header>
+
+<div th:insert="blocks/intro.html :: intro"></div>
+
+<div th:insert="blocks/pros.html :: pros"></div>
+
+<div th:insert="blocks/projects.html :: projects"></div>
+
+<div th:insert="blocks/experience.html :: experience"></div>
+
+<div th:insert="blocks/training.html :: training"></div>
+
+<div th:insert="blocks/about.html :: about"></div>
+
+<footer th:insert="blocks/footer.html :: footer"></footer>
+
+<div th:insert="blocks/modals.html :: modals"></div>
+
+<div th:insert="blocks/scripts.html :: scripts"></div>
+</body>
+</html>

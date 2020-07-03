@@ -1,0 +1,49 @@
+//compress: true
+@import "vars";
+
+html{
+  font-size: 15px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0%;
+  font-size: 1rem;
+  color: @black;
+
+  &.no-scroll{
+    overflow: hidden;
+  }
+
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+  margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+}
+
+/*Blocks*/
+@import "blocks/header.less";
+@import "blocks/intro.less";
+@import "blocks/mouse.less";
+@import "blocks/feature.less";
+@import "blocks/pros.less";
+@import "blocks/project.less";
+@import "blocks/btn.less";
+@import "blocks/experience.less";
+@import "blocks/training.less";
+@import "blocks/about.less";
+@import "blocks/footer.less";
+@import "blocks/modal.less";

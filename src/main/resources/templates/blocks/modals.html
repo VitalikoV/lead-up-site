@@ -1,0 +1,217 @@
+<div th:fragment="modals">
+<div class="modal" id="modal__contact">
+    <div class="modal__contact">
+        <div class="modal__background"></div>
+        <div class="modal__form">
+            <button class="form__close contact__close" data-close="#modal__contact">
+                <img src="images/close.svg" height="25px" width="25px">
+            </button>
+            <h1 class="form__title">Написати нам</h1>
+            <ul class="form__contact">
+                <li class="contact__item">
+                    <img class="item__icon" src="images/telephone.svg" height="20px" width="20px" alt="">
+                    (067) 671 13 40
+                </li>
+                <li class="contact__item">
+                    <img class="item__icon" src="images/email.svg" height="20px" width="20px" alt="">
+                    info@leaduptraining.com
+                </li>
+            </ul>
+            <form class="form" action="/" method="POST">
+
+                <div class="form__group">
+                    <label class="form__label" for="input-email">Ваш Email</label>
+                    <input class="form__input" id="input-email" type="text" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="form-name">Ваше ім'я</label>
+                    <input class="form__input" id="form-name" type="text" placeholder="Олег">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="input-text">Ваше повідомлення</label>
+                    <textarea class="form__textarea" id="input-text"
+                              placeholder="Добрий день! Я б хотів у вас спитати..."></textarea>
+                </div>
+                <a class="btn btn--contact" href="#">Надіслати</a>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /modal contact -->
+
+
+<!-- modals study -->
+<div class="modal" id="study__test">
+    <div class="modal__study">
+        <button class="form__close" data-close="#study__test">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Тестування</h1>
+        <div class="study__text"> Якщо ви не знаєте свій рівень чи хочете перевірити, запишіться на  безкоштовне тестування за телефоном, або напишіть нам.
+            Тестування триває 45 хв і складається з 2-х частин:
+            <ul>
+                <li>письмової – тест</li>
+                <li>усної – співбесіда</li>
+            </ul>
+            Результати тестування повідомляються в межах 3-х робочих днів з рекомендаціями по навчальному курсу та групі.
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="study__kurs">
+    <div class="modal__study">
+        <button class="form__close" data-close="#study__kurs">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Курс</h1>
+        <div class="study__text">
+            Тривалість курсу, після якого ви відчуваєте суттєве покращення у швидкості говоріння та зовсім інший рівень  можливостей використання мови становить 2 семестри.
+            <br>
+            Тривалість семестру – 4 місяці,  32 заняття.
+            <br>
+            К-сть занять на тиждень – 2 заняття.
+            <br>
+            К-сть учасників у групі – 4 – 6 осіб
+            <br>
+            1 заняття – 1,5 год  (90 хв.)
+            <br>
+            Ціна курсу –  3 600 грн./семестр. Книжки не входять у вартість курсу.
+            <br>
+            <div class="modal__study__schedule">
+                <div class="schedule">
+                    <div class="schedule__left">
+                        понеділок і четвер
+                        <hr>
+                        09.30 – 11.00
+                        <hr>
+                        11.00 – 12.30
+                        <hr>
+                        17.30 – 19.00
+                        <hr>
+                        19.00  – 20.30
+                    </div>
+                    <div class="schedule__right">
+                        вівторок і п’ятниця
+                        <hr>
+                        09.30 – 11.00
+                        <hr>
+                        11.00 – 12.30
+                        <hr>
+                        17.30 – 19.00
+                        <hr>
+                        19.00  – 20.30
+                    </div>
+                </div>
+
+                <p class="schedule__notice">*Даний розклад може змінюватися в залежності від побажань групи.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="study__individual">
+    <div class="modal__study" >
+        <button class="form__close" data-close="#study__individual">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Індивідуальне навчання</h1>
+        <div class="study__text">
+            Формування групи здійснюється на основі результатів тесту та рівня володіння мовою учасників,
+            враховуючи побажання щодо графіку занять.
+            До уваги також беруться індивідуальні потреби учасників,
+            тому програма курсу включатиме найважливіші теми.
+            Під час курсу ведеться відслідковування прогресу кожного учасника з подальшими індивідуальними рекомендаціями
+        </div>
+    </div>
+</div>
+<!-- /modal study -->
+
+
+
+<!-- modals training -->
+<div class="modal" id="training__first">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__first">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title">Перший рівень</h1>
+        <h3 class="modal__training__subtitle">Основи комунікації </h3>
+        <div class="modal__training__text">
+            Ряд курсів та тренінгів, спрямованих на розвиток основних комунікативних навичок згідно з потребами компанії:
+            <ul>
+                <li>Рідною мовою або іноземною мовою</li>
+                <li>Комунікація як транзакція</li>
+                <li>Комунікативні методи і техніки</li>
+                <li>General English: elementary, pre-intermediate, intermediate, upper-intermediate, advanced</li>
+                <li>Training: speaking, listening and speaking, grammar</li>
+                <li>English for IT: Developers, QA, Project Managers, BA</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal" id="training__second">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__second">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title">Другий рівень</h1>
+        <h3 class="modal__training__subtitle">Професійна комунікація</h3>
+        <div class="modal__training__text">
+            Набір тренінгів для розвитку та вдосконалення необхідних професійно-комунікативних навичок:
+
+            <ul>
+                <li>Рідною мовою або іноземною мовою</li>
+                <li>Письмова комунікація</li>
+                <li>Комунікація по телефону</li>
+                <li>Публічний виступ</li>
+                <li>Успішна презентація</li>
+                <li>Засідання</li>
+                <li>Переговори</li>
+                <li>Розв’язання конфліктів</li>
+                <li>English for IT</li>
+                <li>English for QA</li>
+                <li>English for HR</li>
+                <li>Business English</li>
+                <li> Telephoning</li>
+                <li>Meeting</li>
+                <li>Presentation</li>
+                <li>Conference Calls</li>
+                <li>Technical Interview</li>
+                <li>On-Site Visit</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="training__third">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__third">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title"> третій рівень</h1>
+        <h3 class="modal__training__subtitle">Лідерство та менеджмент</h3>
+        <div class="modal__training__text">
+            Ефективне використання базових та професійних комунікативних навичок в управлінні:
+            <ul>
+                <li>Рідною мовою</li>
+                <li>Вплив. Влада в організації</li>
+                <li>Політика в організації. Культура</li>
+                <li>Комунікативні навички для лідера</li>
+                <li>Прийняття рішення</li>
+                <li>Делегування</li>
+                <li>Мотивація</li>
+                <li>Клієнтоорієнтованість</li>
+                <li>іноземною мовою</li>
+                <li>Project Management</li>
+                <li>Project Leadership</li>
+                <li>Client Orientation</li>
+                <li>Cultural Differences</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>

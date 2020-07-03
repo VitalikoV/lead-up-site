@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead-up</title>
+<!--  style.css connection  -->
+    <link href="css/style.css" rel="stylesheet">
+<!--  AOS connection  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--  Jquery connection  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--  Slick library connection  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body >
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" height="40px" width="200px">
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav__link" data-scroll=".big_intro">Головна</a>
+                <a href="#" class="nav__link" data-scroll="#lead">Сильні сторони</a>
+                <a href="#" class="nav__link" data-scroll="#projects">Навчання</a>
+                <a href="#" class="nav__link" data-scroll="#experience">Досвід</a>
+                <a href="#" class="nav__link" data-scroll="#training">Тренінги</a>
+                <a href="#" class="nav__link" data-scroll="#about">Про нас</a>
+                <a href="#" class="btn btn--small" data-modal="#modal__contact">Написати</a>
+            </nav>
+
+            <div class="burger">
+                <img class="burger__icon" src="images/open-menu.png">
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /header -->
+
+<!-- INTRO -->
+<div class="big_intro">
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner"></div>
+            <h1 class="intro__title">LEAD UP</h1>
+            <div class="intro__subtitle">Lead-Up – консультаційно-тренінговий центр з розвитку
+                та вдосконалення лідерських та комунікативних навичок на базі англійської мови.
+            </div>
+            <div class="mouse__place">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="features">
+
+            <div class="feature">
+                <img class="feature__photo" src="images/features/feature-1.png" height="75px" width="150px">
+                <div class="feature__title">Speak–Up</div>
+                <div class="feature__subtitle"> Тренінговий центр, що забезпечує повний цикл комунікативних навичок
+                    українською та англійською мовами,
+                    як доповнювальних до основної освіти, необхідних для роботи в сучасних компаніях
+                </div>
+            </div>
+
+            <div class="feature">
+                <img class="feature__photo" src="images/features/feature-4.png" height="75px" width="150px">
+                <div class="feature__title">Grow–Up</div>
+                <div class="feature__subtitle"> 10-річний успішний досвід організації тренінг-центрів у сфері IT:
+                    SoftServe University,
+                    Microsoft IT Academy, SUN Academic Initiative, Person VUE, Thompson Prometric сертифікаційних
+                    центрів у Львові, співпраця з аутсорсинговими ІТкомпаніями
+                </div>
+            </div>
+
+            <div class="feature">
+                <img class="feature__photo" src="images/features/feature-2.png" height="75px" width="150px">
+                <div class="feature__title">Move–Up</div>
+                <div class="feature__subtitle"> Успішний проектний менеджмент, технологічне лідерство, бізнес-аналіз,
+                    практика тестування, організаційно-процесне бачення стратегії розвитку компанії, коучінг, менторінг,
+                    плани та досягнення особистих цілей
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /intro -->
+
+<!-- Pros -->
+<div class="lead__pros" id="lead">
+    <img class="pros__photo" src="images/pros.jpg" data-aos="fade-right">
+    <div class="pros__text" data-aos="fade-bottom">
+        <div class="pros__title">Сильні сторони</div>
+        <div class="pros__information">
+
+            <div class="pros__col">
+                <img src="images/professionals.png" height="50px" width="230px">
+                <p class="information__text">Професійні тренери з 10-річним досвідом роботи з корпоративними
+                    клієнтами</p>
+            </div>
+
+            <div class="pros__col">
+                <img src="images/development.png" height="50px" width="220px">
+                <p class="information__text">Розробка унікальних тренінгових рішень, що довели свою ефективність на
+                    реальному бізнесі</p>
+            </div>
+
+            <div class="pros__col">
+                <img src="images/know-how.png" height="65px" width="220px" style="margin: -1rem 0 0 -1rem ;">
+                <p class="information__text">Know-how моделі здобуття лідерських та комунікативних навичок, націлених на
+                    отримання результату </p>
+            </div>
+
+            <div class="pros__col">
+                <img src="images/technology.png" height="50px" width="240px">
+                <p class="information__text">Використання сучасних технологій: email, Skype, системи conference call,
+                    відеоконференція</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- /Pros -->
+
+<!-- Projects -->
+<div class="container" id="projects">
+    <h1 class="projects__maintitle">Про навчання</h1>
+
+    <div class="slick__container">
+
+        <div class="projects">
+
+            <div class="project">
+                <img class="project__photo" src="images/testing.jpg" data-modal="#study__test">
+                <div class="project__text">
+                    <div class="project__title">Тестування</div>
+                    <div class="project__description">
+                        Якщо ви не знаєте свій рівень англійської мови чи хочете перевірити,
+                        запишіться на безкоштовне тестування.
+                    </div>
+                </div>
+                <div class="btn__container">
+                    <button class="btn project__btn" href="#" data-modal="#study__test">Детальніше</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project__photo" src="images/course.jpg" data-modal="#study__kurs">
+                <div class="project__text">
+                    <div class="project__title">Курс</div>
+                    <div class="project__description">
+                        Тривалість курсу, після якого ви відчуваєте суттєве покращення у швидкості говоріння
+                        становить 2 семестри.
+                    </div>
+                </div>
+                <div class="btn__container">
+                    <a class="btn" href="#" data-modal="#study__kurs">Детальніше</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img class="project__photo" src="images/individual.jpg" data-modal="#study__individual">
+                <div class="project__text">
+                    <div class="project__title">Індивідуальний підхід</div>
+                    <div class="project__description">Під час курсу ведеться відслідковування прогресу кожного учасника з
+                        подальшими індивідуальними рекомендаціями.
+                    </div>
+                </div>
+                <div class="btn__container">
+                    <a class="btn" href="#" data-modal="#study__individual">Детальніше </a>
+                </div>
+            </div>
+
+        </div>
+        <img src="images/back.svg" class="project__prev" height="20px" width="20px"></img>
+        <img src="images/next.svg" class="project__next" height="20px" width="20px"></img>
+    </div>
+</div>
+<!-- /projects -->
+
+<!-- Experience -->
+<div class="experience" id="experience">
+    <h1 class="experience__title">Досвід</h1>
+    <div class="experience__text">
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" width="400" height="400" alt="">
+            Розробка та впровадження системи корпоративного навчання та політики
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Вдосконалення навичок лідерства та менеджменту, комунікації на базі англійської мови
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Створення карти очікуваних знань та вмінь відповідно до бізнес-цілей компанії
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Розробка та впровадження процесів, що гарантують очікувально-повторювальний результат
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Реалізація ряду комплексних та короткотермінових програм, тренінгів, курсів
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Впровадження гнучкої системи контролю ефективності та результатів тренінгів
+        </p>
+
+        <p class="experience__parag">
+            <img class="experience__checklist" src="images/checklist.png" alt="">
+            Створення середовища, що мотивує до розвитку та росту своїх працівників
+        </p>
+
+    </div>
+
+</div>
+<!-- /experience -->
+
+<!-- Training -->
+<div class="container" id="training">
+    <div class="training">
+        <div class="training__text">
+            <h1 class="training__title">Рівні тренінгів</h1>
+            <p class="training__intro"> Кожен тренінг має свою структуру і рівні.
+                Структура слугує основою для складання плану і мети.
+                За допомогою систематичних рівнів тренінгу вдається краще розробити процес навчання для кожного його
+                учасника.
+                3-рівнева система тренінгів “Lead-Up” сформована на основі бізнес-потреб сучасних компаній,
+                опираючись на Карту компетенцій персоналу.
+            </p>
+
+            <div class="training__cols">
+
+                <div class="training__col training__col__first" data-modal="#training__first">
+                    <h3 class="training__col__title">1-рівень</h3>
+                    <h5 class="training__subtitle">Основи комунікації</h5>
+                    <p class="training__level"> Ряд курсів та тренінгів,
+                        спрямованих на розвиток основних комунікативних навичок згідно з потребами компанії.
+                    </p>
+                </div>
+
+                <div class="training__col training__col__second" data-modal="#training__second">
+                    <h3 class="training__col__title">2-й рівень</h3>
+                    <h5 class="training__subtitle">Професійна комунікація</h5>
+                    <p class="training__level"> Набір тренінгів для розвитку та вдосконалення необхідних
+                        професійно-комунікативних навичок.
+                    </p>
+                </div>
+
+                <div class="training__col training__col__third" data-modal="#training__third">
+                    <h3 class="training__col__title">3-й рівень</h3>
+                    <h5 class="training__subtitle">Лідерство та менеджмент </h5>
+                    <p class="training__level"> Ефективне використання базових та професійних комунікативних навичок в
+                        управлінні.
+                    </p>
+                </div>
+
+            </div>
+            <div class="training__arrows">
+                <img src="images/back.svg" class="training__prev" height="20px" width="20px"></img>
+                <img src="images/next.svg" class="training__next" height="20px" width="20px"></img>
+            </div>
+        </div>
+        <img class="training__photo" src="images/training.png">
+    </div>
+</div>
+<!-- /training -->
+
+<!-- About -->
+<div class="about" id="about">
+    <iframe class="about__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d329395.29002690985!2d23.994261!3d49.834928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add86c34f4b3d%3A0xb527c3737588d37c!2sSmal-Stotskoho%20St%2C%202%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%20Ukraine%2C%2079000!5e0!3m2!1sen!2sus!4v1588261292839!5m2!1sen!2sus"
+            height="600" frameborder="0" style="border:0; position: relative;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    <div class="about__textblock">  
+        <div class="about__title">Про нас</div>
+        Центральний офіс
+        м. Львів, вул.Смаль-Стоцького 1, офіс 206а
+        79018, Україна
+        <hr>
+        Тел.моб.: (067) 671 13 40
+        <br>
+        Тел.моб.: (067) 738 67 51
+        <hr>
+        E-mail: info@leaduptraining.com
+        <br>
+        <div class="about__button"><a href="#" class="btn btn--big" data-modal="#modal__contact">Напишіть нам</a></div>
+    </div>
+</div>
+</div>
+<!-- /about -->
+
+<!--  Footer -->
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__phone">Телефон: (067) 738 67 51</div>
+        <div class="footer__right">© 2020 - Lead up</div>
+        <div class="footer__author"><a class="author__address" href="https://github.com/VitalikoV">Developed by Vitaliy Drapak</a></div>
+    </div>
+</footer>
+<!-- /footer -->
+
+<!-- Modals -->
+<!-- modal contact -->
+<div class="modal" id="modal__contact">
+    <div class="modal__contact">
+        <div class="modal__background"></div>
+        <div class="modal__form">
+            <button class="form__close contact__close" data-close="#modal__contact">
+                <img src="images/close.svg" height="25px" width="25px">
+            </button>
+            <h1 class="form__title">Написати нам</h1>
+            <ul class="form__contact">
+                <li class="contact__item">
+                    <img class="item__icon" src="images/telephone.svg" height="20px" width="20px" alt="">
+                    (067) 671 13 40
+                </li>
+                <li class="contact__item">
+                    <img class="item__icon" src="images/email.svg" height="20px" width="20px" alt="">
+                    info@leaduptraining.com
+                </li>
+            </ul>
+            <form class="form" action="/" method="POST">
+
+                <div class="form__group">
+                    <label class="form__label" for="input-email">Ваш Email</label>
+                    <input class="form__input" id="input-email" type="text" placeholder="example@gmail.com">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="form-name">Ваше ім'я</label>
+                    <input class="form__input" id="form-name" type="text" placeholder="Олег">
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="input-text">Ваше повідомлення</label>
+                    <textarea class="form__textarea" id="input-text"
+                              placeholder="Добрий день! Я б хотів у вас спитати..."></textarea>
+                </div>
+                <a class="btn btn--contact" href="#">Надіслати</a>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /modal contact -->
+
+
+<!-- modals study -->
+<div class="modal" id="study__test">
+    <div class="modal__study">
+        <button class="form__close" data-close="#study__test">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Тестування</h1>
+        <div class="study__text"> Якщо ви не знаєте свій рівень чи хочете перевірити, запишіться на  безкоштовне тестування за телефоном, або напишіть нам.
+            Тестування триває 45 хв і складається з 2-х частин:
+            <ul>
+                <li>письмової – тест</li>
+                <li>усної – співбесіда</li>
+            </ul>
+            Результати тестування повідомляються в межах 3-х робочих днів з рекомендаціями по навчальному курсу та групі.
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="study__kurs">
+    <div class="modal__study">
+        <button class="form__close" data-close="#study__kurs">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Курс</h1>
+        <div class="study__text">
+            Тривалість курсу, після якого ви відчуваєте суттєве покращення у швидкості говоріння та зовсім інший рівень  можливостей використання мови становить 2 семестри.
+            <br>
+            Тривалість семестру – 4 місяці,  32 заняття.
+            <br>
+            К-сть занять на тиждень – 2 заняття.
+            <br>
+            К-сть учасників у групі – 4 – 6 осіб
+            <br>
+            1 заняття – 1,5 год  (90 хв.)
+            <br>
+            Ціна курсу –  3 600 грн./семестр. Книжки не входять у вартість курсу.
+            <br>
+            <div class="modal__study__schedule">
+                <div class="schedule">
+                    <div class="schedule__left">
+                        понеділок і четвер
+                        <hr>
+                        09.30 – 11.00
+                        <hr>
+                        11.00 – 12.30
+                        <hr>
+                        17.30 – 19.00
+                        <hr>
+                        19.00  – 20.30
+                    </div>
+                    <div class="schedule__right">
+                        вівторок і п’ятниця
+                        <hr>
+                        09.30 – 11.00
+                        <hr>
+                        11.00 – 12.30
+                        <hr>
+                        17.30 – 19.00
+                        <hr>
+                        19.00  – 20.30
+                    </div>
+                </div>
+
+                <p class="schedule__notice">*Даний розклад може змінюватися в залежності від побажань групи.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="study__individual">
+    <div class="modal__study" >
+        <button class="form__close" data-close="#study__individual">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="study__title">Індивідуальне навчання</h1>
+        <div class="study__text">
+            Формування групи здійснюється на основі результатів тесту та рівня володіння мовою учасників,
+            враховуючи побажання щодо графіку занять.
+            До уваги також беруться індивідуальні потреби учасників,
+            тому програма курсу включатиме найважливіші теми.
+            Під час курсу ведеться відслідковування прогресу кожного учасника з подальшими індивідуальними рекомендаціями
+        </div>
+    </div>
+</div>
+<!-- /modal study -->
+
+
+
+<!-- modals training -->
+<div class="modal" id="training__first">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__first">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title">Перший рівень</h1>
+        <h3 class="modal__training__subtitle">Основи комунікації </h3>
+        <div class="modal__training__text">
+            Ряд курсів та тренінгів, спрямованих на розвиток основних комунікативних навичок згідно з потребами компанії:
+            <ul>
+                <li>Рідною мовою або іноземною мовою</li>
+                <li>Комунікація як транзакція</li>
+                <li>Комунікативні методи і техніки</li>
+                <li>General English: elementary, pre-intermediate, intermediate, upper-intermediate, advanced</li>
+                <li>Training: speaking, listening and speaking, grammar</li>
+                <li>English for IT: Developers, QA, Project Managers, BA</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal" id="training__second">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__second">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title">Другий рівень</h1>
+        <h3 class="modal__training__subtitle">Професійна комунікація</h3>
+        <div class="modal__training__text">
+            Набір тренінгів для розвитку та вдосконалення необхідних професійно-комунікативних навичок:
+
+            <ul>
+                <li>Рідною мовою або іноземною мовою</li>
+                <li>Письмова комунікація</li>
+                <li>Комунікація по телефону</li>
+                <li>Публічний виступ</li>
+                <li>Успішна презентація</li>
+                <li>Засідання</li>
+                <li>Переговори</li>
+                <li>Розв’язання конфліктів</li>
+                <li>English for IT</li>
+                <li>English for QA</li>
+                <li>English for HR</li>
+                <li>Business English</li>
+                <li> Telephoning</li>
+                <li>Meeting</li>
+                <li>Presentation</li>
+                <li>Conference Calls</li>
+                <li>Technical Interview</li>
+                <li>On-Site Visit</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="training__third">
+    <div class="modal__training">
+        <button class="form__close" data-close="#training__third">
+            <img src="images/close.svg" height="25px" width="25px">
+        </button>
+        <h1 class="modal__training__title"> третій рівень</h1>
+        <h3 class="modal__training__subtitle">Лідерство та менеджмент</h3>
+        <div class="modal__training__text">
+            Ефективне використання базових та професійних комунікативних навичок в управлінні:
+            <ul>
+                <li>Рідною мовою</li>
+                <li>Вплив. Влада в організації</li>
+                <li>Політика в організації. Культура</li>
+                <li>Комунікативні навички для лідера</li>
+                <li>Прийняття рішення</li>
+                <li>Делегування</li>
+                <li>Мотивація</li>
+                <li>Клієнтоорієнтованість</li>
+                <li>іноземною мовою</li>
+                <li>Project Management</li>
+                <li>Project Leadership</li>
+                <li>Client Orientation</li>
+                <li>Cultural Differences</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /modal training -->
+
+
+<!-- scripts -->
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="slick/slick.js"></script>
+
+</body>
+</html>

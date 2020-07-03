@@ -1,0 +1,92 @@
+//main: ../style.less
+
+.header{
+    padding: 0 0;
+    background-color: @white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.header__inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &.show{
+        display: flex;
+    }
+}
+
+.nav__link{
+    font-size: 1rem;
+    color: @black;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 1rem;
+    transition: color .2s linear;
+
+    &:hover{
+        color: @red;
+    }
+    }
+
+.logo{
+    padding-top: 0.2rem;
+    margin-left: -2rem;
+}
+
+.burger{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger__icon{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+@media(max-width: @tablet){
+
+    .burger{
+        display: block;
+    }
+    
+    .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: @white;
+        padding-bottom: 1rem;
+        padding-right: -1rem;
+    }
+
+    .logo{
+        margin-left: 0.5rem;
+    }
+
+    .nav__link{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .btn--small{
+        width: 92%;
+    }
+}

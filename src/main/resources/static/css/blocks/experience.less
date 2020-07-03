@@ -1,0 +1,90 @@
+//main: ../style.less
+
+.experience{
+    margin-top: 3rem;
+    height: 680px;
+    background: @black;
+    color: @red;
+}
+
+.experience__title{
+    font-size: 4rem;
+    padding-top: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.experience__checklist{
+    width: 35px;
+    height: 35px;
+    margin-right: 0.8rem;
+}
+
+.experience__parag{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+
+@media (max-width: @desktop){
+    .experience__parag{
+        font-size: 1.4rem;
+    }
+
+    .experience__checklist{
+        margin-bottom: -0.2rem;
+    }
+
+}
+
+@media(max-width: @tablet){
+    .experience__parag{
+        font-size: 1.3rem;
+    }
+
+    .experience__checklist{
+        margin-bottom: -0.6rem;
+    }
+
+}
+@media(max-width: @mini-tablet){
+
+    .experience{
+        height: 850px;
+    }
+
+    .experience__parag{
+        font-size: 1.2rem;        
+    }
+
+    .experience__checklist{
+        margin-bottom: 0.1rem;
+    }
+}
+
+
+@media(max-width: @phone){
+
+    .experience{
+        height: 680px;
+    }
+
+    .experience__title{
+        font-size: 2.5rem;
+
+    }
+
+    .experience__checklist{
+        width: 25px;
+        height: 25px;
+        margin-right: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .experience__parag{
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 1.5rem;
+    }
+}

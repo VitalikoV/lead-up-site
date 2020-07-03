@@ -1,0 +1,73 @@
+//main: ../style.less
+
+.about{
+    margin-top: 5rem;
+    display: flex;
+}
+
+.about__textblock{
+    width: 40%;
+    margin: 1rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: @white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.about__map{
+    width: 60%;
+}
+
+.about__title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+    font-size: 2.5rem;
+    color: @dark-red;
+}
+
+@media(max-width: @ipad){
+    .about{
+        display: block;
+    }
+
+    .about__textblock{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4rem;
+    }
+
+    .about__map{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: @mini-tablet){
+    .about__textblock{
+        padding: 0;
+    }
+}
+
+
+@media(max-width: @phone){
+    .about__textblock{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .about__title{
+        font-size: 2.5rem;
+    }
+
+    .about__map{
+        height: 400px;
+    }
+}

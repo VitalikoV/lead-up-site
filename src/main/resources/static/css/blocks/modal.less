@@ -1,0 +1,282 @@
+//main: ../style.less
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: fade(@dark-red, 50%);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 1rem;
+
+    &.show{
+        display: flex;
+    }
+
+}
+
+// contact modal
+.modal__contact{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: @white;
+    position: relative;
+
+    // for smooth opening
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.modal__background{
+    width: 50%;
+    background-color: @red;
+}
+
+.modal__form{
+    width: 50%;
+}
+
+.form__close{
+    float: right;
+    border: 0;
+    background-color: @white;
+    outline: none;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.form__title{
+    font-size: 3rem;
+    color: @dark-red;
+    font-weight: 700;
+    text-align: center;
+    margin: 3rem 2rem 2rem 3rem;
+
+}
+
+.form__contact{
+    list-style: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+.contact__item{
+    margin-top: 1rem;
+}
+
+.item__icon{
+    margin-right: 1rem;
+}
+
+.form__group{
+    margin-bottom: 1rem;
+}
+
+.form__label{
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 3.5rem;
+    font-size: 1.4rem;
+    color: @black;
+    font-weight: 400;
+}
+
+.form__input, .form__textarea{
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    padding: 1rem 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 400;
+    border: 2px solid @gray;
+    border-radius: 20px;
+
+    &:focus{
+        outline: none;
+        border: 2px solid @red;
+    }
+
+    transition: border .2s linear;
+}
+
+.form__textarea{
+    padding: 1.4rem 1.8rem;
+    resize: none;
+    margin-bottom: -0.7rem;
+}
+
+
+
+
+// study modal
+.modal__study{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: @white;
+    position: relative;
+
+    // for smooth opening
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.study__title{
+    font-size: 2rem;
+    color: @red;
+    text-align: center;
+    padding: 1rem 0rem 0rem 3rem;
+}
+
+.study__text{
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem 2rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+// Schedule details
+.schedule{
+    display: flex;
+    justify-content: space-between;
+}
+.modal__study__schedule{
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.schedule__notice{
+    font-size: 0.9rem;
+    color: @gray;
+    margin-bottom: 0;
+}
+
+// training modal window
+.modal__training{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: @white;
+    position: relative;
+
+    // for smooth opening
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.modal__training__title{
+    font-size: 2rem;
+    color: @red;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem 0rem 1rem 3rem;
+}
+
+.modal__training__subtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.modal__training__text{
+    padding: 1rem 2rem 2rem 2rem;
+    color: @black;
+    font-size: 1.2rem;
+}
+
+
+@media(max-width: @ipad){
+    .form__contact{
+        font-size: 1.2rem;    
+    }    
+
+    .form__label{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media(max-width: @mini-tablet){
+    .modal__contact{
+        display: block;
+    }
+    .modal__background{
+        width: 100%;
+    }
+    .modal__form{
+        width: 100%;
+    }
+
+    .form__title{
+        font-size: 2.5rem;
+    }
+
+    .contact__close{
+        margin-top: -2rem;
+    }
+}
+
+
+@media(max-width: @phone){
+
+
+    .form__contact{
+        font-size: 1rem;
+    }
+
+    .form__title{
+        font-size: 1.8rem;
+    }
+
+    .form__label{
+        font-size: 1.2rem;
+    }
+
+    .form__input, .form__textarea{
+        width: auto;
+        margin-left: 2.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: -0.7rem;
+        font-size: 1rem;
+        padding-left: 3rem;
+    }
+
+
+    .study__title{
+        font-size: 1.8rem;
+
+    }
+
+    .study__text{
+        font-size: 1rem;
+    }
+
+
+    .modal__training__title{
+        font-size: 1.8rem;
+
+    }
+
+    .modal__training__subtitle{
+        font-size: 0.9rem;
+    }
+
+    .modal__training__text{
+        font-size: 1rem;
+    }
+
+}
